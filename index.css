@@ -231,9 +231,17 @@ section{
     font-size:x-large;
 }
 
-.container .floatdiv p{
+.container .floatdiv p a{
     color:#3aafa9;  
      font-size: 15px; font-family: sans-serif;
+}
+.container .floatdiv p a.active,.container .floatdiv p a:hover{
+    color: green;
+    background-color: white;
+    transition: .5s;
+}
+.container .floatdiv a.active, .container .floatdiv a:hover{
+    background-color: white;
 }
 
 .floatdiv .icon{
@@ -295,7 +303,7 @@ section{
     text-align: center;
     padding: 12px;
 }
-.secthree .sec3div  .iconsDiv p{
+.secthree .sec3div  .iconsDiv p a{
     color:#f4fafa  ; 
     font-size: 14px; 
     font-family: sans-serif;
@@ -604,6 +612,12 @@ section{
 
 .divsec8 .rightdiv h1{
     color: #66f6f1;
+}
+
+
+button.active,button:hover{
+    background-color:#1b9bff;
+    transition: .5s;
 }
 
 @media(max-width:858px){

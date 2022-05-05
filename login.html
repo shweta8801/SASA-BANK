@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
-        <title>Responsive contact | Html CSS</title>
+        <title>SASA : Login</title>
         <link rel="stylesheet" href="login.css">
     </head>
     <body>
@@ -28,23 +28,26 @@
                         <span>Mobile</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text" required>
-                        <span>Email</span>
-                    </div>
-                    <div class="inputBox w50">
                         <input type="password" required>
                         <span>Password</span>
                     </div>
-                    <div class="inputBox w50">
+                    <input type="button" value="Get OTP" onclick="showhidden()" id="otp">
+                    <div class="inputBox w50 " id="hide1">
                         <input type="text" required>
                         <span>OTP sent on mobile</span>
                     </div>
                     <div class="inputBox w100">
-                        <input type="submit" value="Login" onclick="onclick=location.href='profile.html'">
+                        <input type="submit" value="Login" id="hide2" onclick="onclick=location.href='profile.html'">
                     </div>
                 </div>
                 </div>
             </div>
         </section>
+        <script>
+            function showhidden(){
+                document.getElementById("hide1").style.display = "block";
+                document.getElementById("hide2").style.display = "block";
+            }
+        </script>
     </body>
 </html>
