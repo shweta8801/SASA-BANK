@@ -8,6 +8,7 @@
 
 body{
     font-family: montserrat;
+    overflow-x: hidden;
 }
 
 nav{
@@ -205,7 +206,11 @@ section{
             width: 99.99%;
         }
 }
-
+    @media(max-width:412px){
+        .container .floatdiv {
+            text-align: center;
+        }
+    }
 
 /* section one ends  */
 
@@ -422,6 +427,7 @@ section{
         font-size: 14px;
     }
 }
+
 /* section 4 ends  */
 
 /* section 5 starts  */
@@ -458,7 +464,9 @@ section{
 .explore{
     margin-left: 35px; font-weight: bolder; font-size: 20px;
 }
-
+.margins{
+    padding: 9%;
+}
 @media(max-width:858px){
     .secfive{
         width: 90%;
@@ -498,9 +506,7 @@ section{
 
 /* section 5 ends  */
 /* section 6 starts  */
-.divSec4{
 
-}
 /* section 6 ends  */
 /* section 7 starts  */
 .secSeven .contain{
@@ -576,6 +582,8 @@ section{
         margin-top: 3px;
     }
 }
+
+
 
 /* section 7 ends  */
 
